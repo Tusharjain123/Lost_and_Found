@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Item</title>
+    <link rel="stylesheet" href="itemlost.css">
+</head>
+
+<body>
+    <div class="lost">
+        <div class="form">
+            <h1>Item Lost</h1>
+            <form action="/lost-submit" method="post">
+                <label for="Itemname">Item name</label>
+                <div>
+                    <input type="text" name="Itemname"id="Itemname">
+                </div>
+                <label for="category">Category</label>
+                <div>
+                    <input type="text" name="category" id="category">
+                </div>
+                <label for="datelost">Date Lost</label>
+                <div>
+                    <input type="date" name="datelost" id="datelost">
+                </div>
+                <label for="timelost">Time Lost</label>
+                <div>
+                    <input type="time" name="timelost" id="timelost">
+                </div>
+                <label for="Brand">Brand</label>
+                <div>
+                    <input type="text" name="Brand" id="Brand">
+                </div>
+                <label for="wherelost">Where you have Lost</label>
+                <div>
+                    <input type="text" name="wherelost" id="wherelost">
+                </div>
+                <div>
+                    <label for="specification">Specification</label>
+                </div>
+                <div>
+                    <textarea name="specification" id="specification" cols="40" rows="2"></textarea>
+                </div>
+                <button class="btn">Submit</button>
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    </div>
+    <script src="./lost.js"></script>
+</body>
+
+</html>

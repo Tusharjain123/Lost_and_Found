@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Noto+Serif&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    transition: all 1s ease-in;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+/* Logo */
+.logo{
+    display:flex;
+    position: absolute;
+    top:3px;
+    left:15px;
+   
+}
+/* .logo:hover{
+     transform: scale(3);
+} */
+.logo p{
+    margin-top: 23px;
+    margin-left: -13px;
+}
+/* nav bar */
+.nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    height: 72px;
+    width:98vw;
+}
+
+.nav img{
+    width:100px;
+    height: 100px;
+}
+
+.nav a{
+    margin-right: 30px;
+    text-decoration: none;
+    margin-top: 23px;
+    color:black;
+    padding:5px ;
+    border-radius: 10px;
+}
+
+.nav a:hover{
+    background-color: rgb(163, 255, 255);  
+}
+a.active{
+    background-color: rgb(163, 255, 255);  
+}
+.nav li{
+    list-style: none;
+}
+
+.nav li:hover{
+    transform: translateX(4px); 
+}
+.nav::after{
+    content: "";
+    position: absolute;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    height: 493px;
+    width:100%;
+    background: linear-gradient(-45deg, #ee7752, #92e095, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+    padding-top: 16px;
+    z-index: -2;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.search{
+    position:absolute;
+    top:21px;
+    right: 5px;
+    padding: 3px;
+    outline: none;
+
+}
+input{
+    width: 18rem;
+    height: 22px;
+}
+.btnsearch{
+    height: 22px;
+}
+
+/* First Part */
+
+.effect:hover{
+    transition:500ms ;
+    text-shadow: -4px -4px 10px grey;
+    transform: scale(1.7);
+    
+}
+.effect{
+    margin-left: -3px;
+}
+
+.firstpart{
+    margin-top: 51px;
+    
+}
+.firstpart img{
+    width: 305px;
+    height: 371px;
+    position: absolute;
+    top: 6rem;
+    left: 588px;
+    z-index: -1;
+}
+.firstpart p{
+    font-size: 20px;
+}
+.box1{
+    width: 89%;
+    height: 296px;
+    border: 2px solid black;
+    padding: 28px 5px;
+    border-radius: 24px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.box:hover{
+    box-shadow: 6px 6px grey;
+}
+.content{
+    margin-top: 35px;
+}
+
+/* second part */
+.secondpart img{
+    position: absolute;
+    top: 34.5rem;
+    left: 178px;
+    width:300px;
+    height:300px;
+    z-index: -1;
+}
+.secondpart{
+    font-size: 21px;
+    border: 2px solid black;
+    width: 82rem;
+    height: 288px;
+    margin-left: 8rem;
+    margin-top: 59px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 31px;
+   
+}
+.content1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-left: 16rem;
+}
+
+.content p{
+    font-size: 20px;
+}
+.btn{
+    padding:5px;
+    border-radius:10px;
+    margin-left:16rem;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.jsbtn{
+    margin-left: 20rem;
+    margin-top: 10px;
+    display: none;
+}
+.btn1{
+    font-size: 18px;
+    cursor: pointer;
+    padding:5px;
+    border-radius: 10px;
+    width: 90px;
+    height: 34px;
+    margin-right:55px;
+}
+.btn1 a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+/* Third Part */
+
+
+.thirdpart{
+    background:no-repeat center/cover linear-gradient(-40deg, #f35555,lightblue,rgb(197, 255, 197),lightyellow);
+    height: 7rem;
+    font-size: 16px;
+
+}
+.last{
+    text-align: center;
+    width: 22rem;
+    height: 104px;
+    border: 2px solid black;
+    border-radius: 16px;
+    margin: 48px;
+    margin-inline: auto;
+    margin-top:10px;
+  
+}

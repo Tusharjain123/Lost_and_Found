@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Noto+Serif&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Cormorant Garamond', serif;
+}
+p{
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+}
+.lost{
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+
+}
+.lost::after{
+    content: "";
+    position: absolute;
+    background: no-repeat center/cover url("./background_lostfound.png");
+    opacity:0.6;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height: 98vh;
+    z-index: -1;
+
+}
+
+.lost1{
+    border: 2px solid black;
+    /* margin-right: 5px; */
+    margin: 10px 10px;
+}
+.lost p{
+        padding:2px 5px;
+}
+.second{
+    margin-top: 100px;
+}
+.found{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+.found1{
+    border: 2px solid black;
+    /* margin-right: 5px; */
+    margin: 10px 10px;
+}
+.found p{
+    padding:2px 5px;
+}

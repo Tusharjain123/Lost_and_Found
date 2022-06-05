@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Item</title>
+    <link rel="stylesheet" href="found.css">
+</head>
+
+<body>
+    <div class="found">
+        <div class="form">
+            <h1>Item Found</h1>
+            <form action="/submit" method="post">
+                <label for="Itemname">Item name</label>
+                <div>
+                    <input type="text" name="Itemname" id="Itemname">
+                </div>
+                <label for="category">Category</label>
+                <div>
+                    <input type="text" name="category" id="category">
+                </div>
+                <label for="datefound">Date found</label>
+                <div>
+                    <input type="date" name="datefound" id="datefound">
+                </div>
+                <label for="timefound">Time found</label>
+                <div>
+                    <input type="time" name="timefound" id="timefound">
+                </div>
+                <label for="Brand">Brand</label>
+                <div>
+                    <input type="text" name="Brand" id="Brand">
+                </div>
+                <label for="wherefound">Where you have found</label>
+                <div>
+                    <input type="text" name="wherefound" id="wherefound">
+                </div>
+                <div>
+                    <label for="specification">Specification</label>
+                </div>
+                <div>
+                    <textarea name="specification" name="specification" id="specification" cols="40" rows="2"></textarea>
+                </div>
+                <button class="btn">Submit</button>
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
