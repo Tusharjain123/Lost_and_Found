@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-app.use(express.static("./public"))
+app.use(express.static("public"))
 
 
 app.get("/", (req, res) => {
@@ -75,6 +75,6 @@ app.post("/lost-submit", (req, res) => {
     })
 })
 
-app.listen(80, () => {
+app.listen(process.env.PORT || 80, () => {
     console.log("Server is started on port 80")
 })
