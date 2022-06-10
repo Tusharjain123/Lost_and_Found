@@ -10,7 +10,7 @@ const recentlost = fs.readFileSync("./recentlost/lostandfound.html", "utf8")
 // saving data
 const mongoose = require('mongoose');
 const bodyparser = require("body-parser")
-mongoose.connect("process.env.MONGODB_URI || mongodb://localhost/Found_data", { useNewUrlParser: true })
+mongoose.connect("process.env.MONGODB_URI || mongodb://localhost/Found_data", { useNewUrlParser: true, useUnifiedTopology:true })
 var db = mongoose.connection
 db.on("error", console.error.bind(console, "connection error:"))
 
