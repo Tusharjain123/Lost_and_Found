@@ -8,12 +8,12 @@ const recentlost = fs.readFileSync("./recentlost/lostandfound.html", "utf8")
 
 require("dotenv").config()
 
-MONGODB_URI= "mongodb+srv://lostfound:4qg7ST2CvxaAJXLX@cluster0.k3tmwuh.mongodb.net/Lost_and_found?retryWrites=true&w=majority"
+MONGODB_URI= "mongodb+srv://lostfound:asat1948@cluster0.k3tmwuh.mongodb.net/Lost_and_found?retryWrites=true&w=majority"
 const mongoose = require('mongoose');
 const bodyparser = require("body-parser")
-mongoose.connect(process.env.MONGODB_URI || "mongodb://127.0.0.1/Found_data", {useNewUrlParser: true})
+mongoose.connect(process.env.MONGODB_URI || "mongodb://127.0.0.1/Found_data", {useNewUrlParser: true,useUnifiedTopology: true})
 var db = mongoose.connection
-db.on("error", console.error.bind(console, "connection error:"))
+db.on("error", console.error.bind(console, "connection error:"));
 
 
 // import for middleware
