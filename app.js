@@ -5,6 +5,9 @@ const home = fs.readFileSync("./home_page/home.html", "utf8")
 const lost = fs.readFileSync("./lost_item/lostitem.html", "utf8")
 const found = fs.readFileSync("./found/found.html", "utf8")
 const recentlost = fs.readFileSync("./recentlost/lostandfound.html", "utf8")
+
+require("dotenv").config()
+
 const mongoose = require('mongoose');
 const bodyparser = require("body-parser")
 mongoose.connect(process.env.MONGODB_URI || "mongodb://127.0.0.1/Found_data", {useNewUrlParser: true})
