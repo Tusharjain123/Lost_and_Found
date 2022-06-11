@@ -5,14 +5,12 @@ const home = fs.readFileSync("./home_page/home.html", "utf8")
 const lost = fs.readFileSync("./lost_item/lostitem.html", "utf8")
 const found = fs.readFileSync("./found/found.html", "utf8")
 const recentlost = fs.readFileSync("./recentlost/lostandfound.html", "utf8")
-
-
-// saving data
 const mongoose = require('mongoose');
 const bodyparser = require("body-parser")
-mongoose.connect(process.env.MONGODB_URI || "mongodb://127.0.0.1/Found_data", { useNewUrlParser: true})
+mongoose.connect(process.env.MONGODB_URI || "mongodb://127.0.0.1/Found_data", {useNewUrlParser: true})
 var db = mongoose.connection
 db.on("error", console.error.bind(console, "connection error:"))
+
 
 // import for middleware
 var bodyParser = require('body-parser');
@@ -20,7 +18,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-app.use(express.static("public"))
+app.use(express.static("public"));
 
 
 app.get("/", (req, res) => {
@@ -53,7 +51,7 @@ app.post("/submit", (req, res) => {
         res.end("You have successfully submitted the form")
     }).catch(() => {
         res.status(404).send("Your data is not saved!!!")
-    })
+    });
 })
 app.post("/lost-submit", (req, res) => {
     const lostdataSchema = new mongoose.Schema({
@@ -72,9 +70,9 @@ app.post("/lost-submit", (req, res) => {
         res.end("You have successfully submitted the form")
     }).catch(() => {
         res.status(404).send("Your data is not saved!!!")
-    })
+    });
 })
 
 app.listen(process.env.PORT || 80, () => {
     console.log("Server is started on port 80")
-})
+});
