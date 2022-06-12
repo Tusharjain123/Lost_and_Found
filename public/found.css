@@ -5,11 +5,11 @@
     font-family: 'Cormorant Garamond', serif;
 }
 label{
-    font-size: 18px;
+    font-size: 15px;
 }
 .found{
-    width: 412px;
-    height: 31rem;
+    width: fit-content;
+    height: fit-content;
     border: 2px solid black;
     margin: auto;
 }
@@ -54,6 +54,22 @@ textarea{
     
 }
 
-input[type="reset"]{
-    padding: 4px;
+.btn{
+    padding:3px;
+    border-radius: 5px;
+    
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.button>input{
+    margin-left: 10px;
+    width: 53px;
+    height: 25px;
+    text-align: center;
+    font-weight: bold;
 }

@@ -8,3 +8,10 @@ btn.addEventListener("click",()=>{
         jsbtn.style.display="none"
     }
 })
+    let act = document.querySelectorAll(".nav>li>a")
+    act.forEach(acti => {
+        acti.addEventListener("click", () => {
+            act.forEach(activ => activ.classList.remove("active"))
+            acti.classList.add("active");
+        })
+    })

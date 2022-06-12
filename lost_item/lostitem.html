@@ -7,9 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lost Item</title>
     <link rel="stylesheet" href="itemlost.css">
+    <link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
+    <div class="container">
+        <ul class="nav">
+            <div class="logo">
+                <img src="glass.png" alt="Lost and Found">
+                <p>Lost and Found</p>
+            </div>
+            <li><a href="/" >Home</a> </li>
+            <li><a href="/lost_item" class="active" > Lost Item</a></li>
+            <li><a href="/found"> Found Item</a></li>
+            <li><a href="/recentlost"> Recent lost and Found</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button class="btnsearch">Search</button>
+        </div>
+    </div>
+
     <div class="lost">
         <div class="form">
             <h1>Item Lost</h1>
@@ -44,8 +62,10 @@
                 <div>
                     <textarea name="specification" id="specification" cols="40" rows="2"></textarea>
                 </div>
+                <div class="button">
                 <button class="btn">Submit</button>
                 <input type="reset" value="Reset">
+                </div>
             </form>
         </div>
     </div>

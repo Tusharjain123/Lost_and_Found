@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Noto+Serif&display=swap');
 
+
 *{
     margin:0px;
     padding:0px;
@@ -7,62 +8,7 @@
     font-family: 'Cormorant Garamond', serif;
 }
 
-img:hover{
-    transform: scale(1.1);
-}
 
-/* Logo */
-.logo{
-    display:flex;
-    position: absolute;
-    top:3px;
-    left:15px;
-   
-}
-/* .logo:hover{
-     transform: scale(3);
-} */
-.logo p{
-    margin-top: 23px;
-    margin-left: -13px;
-}
-/* nav bar */
-.nav{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    height: 72px;
-    width:98vw;
-}
-
-.nav img{
-    width:100px;
-    height: 100px;
-}
-
-.nav a{
-    margin-right: 30px;
-    text-decoration: none;
-    margin-top: 23px;
-    color:black;
-    padding:5px ;
-    border-radius: 10px;
-}
-
-.nav a:hover{
-    background-color: rgb(163, 255, 255);  
-}
-a.active{
-    background-color: rgb(163, 255, 255);  
-}
-.nav li{
-    list-style: none;
-}
-
-.nav li:hover{
-    transform: translateX(4px); 
-}
 .nav::after{
     content: "";
     position: absolute;
@@ -89,22 +35,6 @@ a.active{
     100% {
         background-position: 0% 50%;
     }
-}
-
-.search{
-    position:absolute;
-    top:21px;
-    right: 5px;
-    padding: 3px;
-    outline: none;
-
-}
-input{
-    width: 18rem;
-    height: 22px;
-}
-.btnsearch{
-    height: 22px;
 }
 
 /* First Part */
@@ -164,7 +94,7 @@ input{
 .secondpart{
     font-size: 21px;
     border: 2px solid black;
-    width: 82rem;
+    width: 82%;
     height: 288px;
     margin-left: 8rem;
     margin-top: 59px;

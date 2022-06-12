@@ -9,8 +9,8 @@ label{
     font-size: 18px;
 }
 .lost{
-    width: 412px;
-    height: 31rem;
+    width: fit-content;
+    height: fit-content;
     border: 2px solid black;
     margin: auto;
 }
@@ -54,6 +54,16 @@ textarea{
     
 }
 
-input[type="reset"]{
-    padding: 4px;
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.button>input{
+    margin-left: 10px;
+    width: 53px;
+    height: 25px;
+    text-align: center;
+    font-weight: bold;
 }
