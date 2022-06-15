@@ -152,11 +152,11 @@
 
 }
 .last{
-    padding-top: 5px;
+    padding-top: 10px;
     padding-right: 5px;
     text-align: center;
     width: 22rem;
-    height: 104px;
+    height: 95px;
     border: 2px solid black;
     border-radius: 16px;
     margin: auto;
