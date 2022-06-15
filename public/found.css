@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 *{
     margin:0px;
     padding:0px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 label{
     font-size: 15px;

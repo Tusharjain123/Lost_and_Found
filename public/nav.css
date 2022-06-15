@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Noto+Serif&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 
 *{
     margin:0px;
     padding:0px;
-    transition: all 1s ease-in;
-    font-family: 'Cormorant Garamond', serif;
+    transition: all 100ms ease-in;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Logo */
@@ -16,10 +15,8 @@
     left:15px;
    
 }
-
-.logo p{
-    margin-top: 23px;
-    margin-left: -13px;
+.logo>a:hover{
+    background: none;
 }
 
 /* nav bar */
@@ -36,9 +33,11 @@
 .nav img{
     width:100px;
     height: 100px;
+    position: absolute;
+    top: -9px;
 }
 
-.nav a{
+.nav>li>a{
     margin-right: 30px;
     text-decoration: none;
     margin-top: 23px;
@@ -48,7 +47,7 @@
 }
 
 .nav a:hover{
-    background-color: rgb(163, 255, 255);  
+    background-color: white;  
 }
 a.active{
     background-color: rgb(163, 255, 255);  
@@ -58,10 +57,10 @@ a.active{
 }
 
 .nav li:hover{
-    transform: translateX(4px); 
+    transform: translateY(-4px); 
 }
-.nav li .active{
-    transform: translateX(4px); 
+.nav li.active{
+    transform: translateY(-4px); 
 }
 
 .search{

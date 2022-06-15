@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 
 
 *{
     margin:0px;
     padding:0px;
-    transition: all 1s ease-in;
-    font-family: 'Cormorant Garamond', serif;
+    transition: all 100ms ease-in;
+    font-family: 'Josefin Sans', sans-serif;
 }
-
 
 .nav::after{
     content: "";
@@ -41,7 +40,7 @@
 
 .effect:hover{
     transition:500ms ;
-    text-shadow: -4px -4px 10px grey;
+    text-shadow: -4px -4px 10px rgb(240, 240, 240);
     transform: scale(1.7);
     
 }
@@ -56,9 +55,10 @@
 .firstpart img{
     width: 305px;
     height: 371px;
+    margin: auto;
     position: absolute;
     top: 6rem;
-    left: 588px;
+    left: 38%;
     z-index: -1;
 }
 .firstpart p{
@@ -76,7 +76,7 @@
 }
 
 .box:hover{
-    box-shadow: 6px 6px grey;
+    box-shadow: 6px 6px rgb(208, 198, 198);
 }
 .content{
     margin-top: 35px;
@@ -141,27 +141,25 @@
     color: black;
 }
 
-
-
-
-
 /* Third Part */
 
-
 .thirdpart{
+   
     background:no-repeat center/cover linear-gradient(-40deg, #f35555,lightblue,rgb(197, 255, 197),lightyellow);
-    height: 7rem;
+    height: 10rem;
     font-size: 16px;
+    margin-top: 15px;
 
 }
 .last{
+    padding-top: 5px;
+    padding-right: 5px;
     text-align: center;
     width: 22rem;
     height: 104px;
     border: 2px solid black;
     border-radius: 16px;
-    margin: 48px;
-    margin-inline: auto;
-    margin-top:10px;
-  
+    margin: auto;
+    position: relative;
+    top: 1.5rem;
 }

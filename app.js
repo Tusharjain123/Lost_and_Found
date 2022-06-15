@@ -5,7 +5,6 @@ const home = fs.readFileSync("./home_page/home.html", "utf8")
 const lost = fs.readFileSync("./lost_item/lostitem.html", "utf8")
 const found = fs.readFileSync("./found/found.html", "utf8")
 const recentlost = fs.readFileSync("./recentlost/lostandfound.html", "utf8")
-
 require("dotenv").config()
 
 MONGODB_URI= "mongodb+srv://lostfound:asat1948@cluster0.k3tmwuh.mongodb.net/Lost_and_found?retryWrites=true&w=majority"
