@@ -2,9 +2,9 @@
 
 Initialise project by installing dependencies
 
-npm i
+### npm i
 
 Starting local server
 
-npm start
+### npm start
 
